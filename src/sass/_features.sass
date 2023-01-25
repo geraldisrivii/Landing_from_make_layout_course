@@ -1,3 +1,22 @@
 .features
     background-color: $color-gray-light
-    grid-column: 2 / -1
+    grid-column: main-start / main-end
+    display: grid
+    padding: 15rem 0rem
+    gap: 3rem 4rem
+    grid-template-columns: repeat(3, 1fr)
+
+.feature
+    display: grid
+    grid-template-columns: 6.5rem 1fr
+    &__description
+        //sds
+    &__icon
+        width: 4.5rem
+        height: 4.5rem
+    &__header
+        margin: 1.3rem 0rem
+        font-size: 1.9rem
+        text-align: left
+        letter-spacing: 0rem
+        color: $color-green-dark
