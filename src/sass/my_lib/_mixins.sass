@@ -1,0 +1,18 @@
+// Clear falling for blocks which is next after float block
+@mixin clearfix
+    &::after
+        content: ''
+        display: table
+        clear: both
+@mixin phone
+    @media ( max-width: 450px )
+        @content
+@mixin laptop
+    @media ( max-width: 1100px )
+        @content
+@mixin table
+    @media ( max-width: 850px )
+        @content
+@mixin min_table
+    @media ( max-width: 570px )
+        @content

@@ -1,0 +1,61 @@
+@import _mixins.sass
+@import _variables.sass
+html
+    font-size: 62.5%
+//using color declarations
+$us_white: rgba(255, 255, 255, 1)
+$dark_orange: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%)
+$ligher_gray: rgba(119, 119, 119, 1)
+// Headers
+@mixin header($color, $text-align, $letter-spacing, $font-weight, $font-size)
+    color: $color
+    text-align: $text-align
+    letter-spacing: $letter-spacing
+    font-weight: $font-weight
+    font-size: $font-size
+.header_main
+    @include header($us_white, center, 1rem, 800, 5rem)
+    @include phone
+        font-size: 3.4rem
+.header_sub
+    @include header($us_white, center, .5rem, 200, 4rem)
+.header-programm-card_front
+    @include header($us_white, right, .2rem, 300, 2.8rem)
+.header_description
+    @include header(transparent, center, 1rem, 800, 3.6rem)
+    display: inline-block
+    background: $dark_orange
+    -webkit-background-clip: text
+    transition: all .4s
+    @include phone
+        font-size: 3.4rem
+    &:hover
+        transform: scale(1.03)
+        text-shadow: 0px 4px 4px $shadow_black
+.header_description-card
+    @include header($ligher_gray, center, .2rem, 700, 2rem)
+.header-programm-card_back
+    @include header($us_white, center, .2rem, 500, 6rem)
+.header-review
+    @include header($us_white, center, .2rem, 400, 2.4rem)
+// Text __________________________________________________________
+.text_as_into_button
+    font-weight: 500
+    letter-spacing: 0.5rem
+.text
+    font-weight: 400
+    font-size: 1.6rem
+.text-in-card
+    letter-spacing: .2rem
+    @include min_table
+        font-size: 2rem
+// Links ___________________________________________________________
+//color declarations
+    $ligher_gray: rgba(119, 119, 119, 1)
+@mixin link($color)
+    font-size: 1.5rem
+    color: $color
+    letter-spacing: .2rem
+    font-weight: 700
+.link
+    @include link($ligher_gray)

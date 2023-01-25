@@ -1,0 +1,25 @@
+.text-center {
+  text-align: center;
+}
+
+.block-center {
+  margin: 0 auto;
+}
+
+.m-b-8rem {
+  margin-bottom: 8rem;
+}
+
+.below-opacity-0 {
+  opacity: 0;
+}
+
+.m-r-0rem {
+  margin-right: 0rem;
+}
+
+.clear-fix::after {
+  content: "";
+  display: table;
+  clear: both;
+}/*# sourceMappingURL=utilitis.css.map */
