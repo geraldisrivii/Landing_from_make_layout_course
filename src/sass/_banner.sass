@@ -1,6 +1,56 @@
 .banner-img
-    background-color: $color-blue-dark
-    grid-column: grid-start / col-end 4 
+    position: relative
+    background: url(../img/Rectangle_5.png) center / cover no-repeat
+    @include dpi
+        background: url(../img/Rectangle_5-big.png) center / cover no-repeat
+    @include large_resolution
+        background: url(../img/Rectangle_5-big.png) center / cover no-repeat
+    grid-column: grid-start / col-end 4
+    padding: 6.5rem
+    text-align: center
+    @include laptop
+        display: flex
+        align-items: center
+        padding: 0rem 2rem
+    @include phone
+        padding-top: 1rem
+        padding-bottom: 1rem
+    &__image
+        position: absolute
+        width: 90%
+        @include laptop
+            width: 49%
+            position: static
+            display: inline-block
+        @include phone
+            width: 100%
+            &:not(:last-child)
+                margin-bottom: 1rem
+        &_1
+            top: 0px
+            left: 0px
+        &_2 
+            top: 15rem
+            left: 15rem
+    @include laptop
+        grid-column: grid-start / grid-end
+.image-box
+    position: relative
+    display: flex
+    justify-content: space-between
+    @include phone
+        display: block
 .banner-text
     background-color: $color-blue-dark
-    grid-column:  col-start 5 / grid-end
+    grid-column:  col-start 5 / grid-end 
+    @include laptop
+        grid-row: 4 / 5
+        grid-column: grid-start / grid-end
+        padding: 7rem
+    padding: 20% 0rem
+    padding-left: 8rem
+    &__text
+        width: 80%
+        @include phone
+            width: 100%
+

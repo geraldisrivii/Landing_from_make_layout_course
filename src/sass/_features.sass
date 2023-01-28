@@ -4,7 +4,7 @@
     display: grid
     padding: 15rem 0rem
     gap: 3rem 4rem
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(auto-fill, minmax(346px, 1fr))
 
 .feature
     display: grid
@@ -16,7 +16,9 @@
         height: 4.5rem
     &__header
         margin: 1.3rem 0rem
-        font-size: 1.9rem
+        font-size: 19px
         text-align: left
         letter-spacing: 0rem
+        color: $color-green-dark
+    &__text
         color: $color-green-dark

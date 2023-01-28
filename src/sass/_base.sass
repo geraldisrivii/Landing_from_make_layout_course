@@ -5,9 +5,7 @@ $color-blue-dark: #101D2C
 
 $color-gray-dark: #AAAAAA
 $color-gray-light: #F5F5F5
-    
 
-    
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -15,13 +13,84 @@ $color-gray-light: #F5F5F5
 
 html
     font-size: 62.5%
-
+    @include phone
+        font-size: 50%
 .body
     background-color: gray
     font-family: 'Montserrat', sans-serif
-    color: black
-    font-size: 1.6rem
+    color: white
+    font-size: 16px
+    @include phone
+        font-size: 18px
+
 .main-container
+    background-color: white
     display: grid
     grid-template-columns: [sidebar-start] 8rem [sidebar-end grid-start] minmax(4rem, 1fr)[main-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [main-end] minmax(4rem, 1fr) [grid-end]
-    grid-template-rows:  80vh min-content 40vw repeat(3,min-content) 
+    grid-template-rows: 80vh min-content minmax(40vw, min-content) repeat(4,min-content)
+    @include phone
+        grid-template-columns: [grid-start] minmax(1rem, 1fr)[main-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [main-end] minmax(1rem, 1fr) [grid-end]
+.button_square
+    display: inline-block
+    padding: 1.5rem 3rem
+    background-color: $color-green-light
+.programm-card
+    height: 450px
+    min-width: 330px
+    box-shadow: $box-shadow
+    text-align: center
+    position: relative
+    &__image
+        height: 50% 
+        background: url('../img/Rectangle 9-5.png') center / cover no-repeat
+        width: 100%
+        top: 0
+        left: 0
+        &_2
+           background-image:  url('../img/Rectangle 9-4.png')
+        &_3
+           background-image:  url('../img/Rectangle 9-3.png')
+        &_4
+           background-image:  url('../img/Rectangle 9-2.png')
+        &_5
+           background-image:  url('../img/Rectangle 9-1.png')
+        &_6
+           background-image:  url('../img/Rectangle 9.png')
+    &__header
+        position: absolute
+        transform: translate(-50%,-50%)
+        z-index: 1
+        width: 15em
+        height: 3.1em
+        background-color: $color-green-dark 
+    &__specs
+        height: 175px
+        background-color: $color-blue-dark
+        list-style-type: none
+        margin-inline: 0
+        margin-block: 0
+        padding-inline: 0
+        padding: 12%
+        padding-top: 57px
+        display: grid
+        gap: 45px 0px
+        grid-template-columns: repeat(2, 1fr)
+    &__button_square
+        width: 100%
+        height: 50px
+.spec-element
+    text-align: left
+    &__element-icon
+        fill: white
+        &_1
+            width: 1.45rem
+            height: 2rem
+        &_2
+            width: 2rem
+            height: 2.1rem
+        &_3
+            width: 2rem
+            height: 1.5rem
+        &_4
+            width: 2rem
+            height: 1.75rem
