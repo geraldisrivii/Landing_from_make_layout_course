@@ -1,3 +1,33 @@
 .header
     background-color: $color-blue-dark
     grid-column: grid-start / col-end 6
+    padding: 5rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background: url('../img/Rectangle 3.png') left / cover no-repeat
+    @include dpi
+        background: url('../img/Rectangle 3-big.png') left / cover no-repeat
+    &__logo
+        width: 120px
+        height: 41px
+        margin: 0 auto
+        display: block
+.description-box
+    &__header
+        margin-bottom: 4.5rem
+        
+.br-container
+    display: grid
+    grid-template-columns: 1fr max-content 1fr
+    align-items: center
+    gap: 20px
+    div
+        border: 1px solid gray
+        height: 1px
+    margin-bottom: 2rem 
+.logos-container
+    display: grid
+    justify-content: center
+    gap: 20px
+    grid-template-columns: repeat(auto-fill, 180px)
