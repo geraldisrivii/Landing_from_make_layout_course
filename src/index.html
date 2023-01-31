@@ -11,8 +11,43 @@
 </head>
 
 <body class="body">
+    <div class = "navigation-menu-conteiner">
+            <input class="navigation-menu-conteiner__check-box" type="checkbox" id="check" />
+            <div class = "navigation-menu-conteiner__background-for-nav-menu"></div>
+            <label for="check" class="nav-bar-gamburger body__nav-bar-gamburger" >
+              <div></div>
+              <div></div>
+              <div></div>
+            </label>
+            <div class="navigation-menu">
+              <ul class="navigation-menu__list">
+                <li><a href = "#!" class="header_sub">О НАС</a></li>
+                <li><a href = "#!" class="header_sub">СКИДКИ</a></li>
+                <li><a href = "#!" class="header_sub">ЛУЧШИЕ <span>ТУРЫ</span></a></li>
+                <li><a href = "#!" class="header_sub">КАЛЬКУЛЯТОР ЦЕНЫ</a></li>
+                <li><a href = "#!" class="header_sub">СВЯЗАТЬСЯ С НАМИ</a></li>
+              </ul>
+            </div>
+    </div>
+    <input class="main-container__checkbox" type="checkbox" name="checkbox_1" id="checkbox_1">
+    <aside class="sidebar">
+        <label for="checkbox_1" class="sidebar__gamburger gamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <ul class="sidebar__nav-bar nav-bar">
+            <li><a href="">АРЕНДА КОНСОЛЕЙ</a></li>
+            <li><a href="">КОМАНДНЫЕ СОРЕВНОВАНИЯ</a></li>
+            <li><a href="">АРЕНДА СЕРВЕРА</a></li>
+            <li><a href="">СООБЩЕСТВО</a></li>
+            <li><a href="">РАБОТАЙ И ИГРАЙ</a></li>
+        </ul>
+        <svg class="sidebar__logo">
+            <use xlink:href="icons/symbol-defs2.svg#icon-logo"></use>
+        </svg>
+    </aside>
     <div class="main-container">
-        <aside class="sidebar">Hello</aside>
         <div class="header">
             <svg class="header__logo">
                 <use xlink:href = "icons/symbol-defs2.svg#icon-logo"></use>
@@ -352,17 +387,32 @@
                 <div class="programm-card__button_square button_square"><h5 class="header-main_small">ВЫБРАТЬ ПЛАТФОРМУ</h5></div>
             </div>
         </div>
-        <div class="gallery">gallery</div>
+        <div class="gallery">
+            <div class="gallery__item gallery__item-1"><img src="img/Rectangle 12gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-2"><img src="img/Rectangle 13gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-3"><img src="img/Rectangle 14gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-4"><img src="img/Rectangle 15gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-5"><img src="img/Rectangle 16gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-6"><img src="img/Rectangle 17gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-7"><img src="img/Rectangle 18gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-8"><img src="img/Rectangle 19gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-9"><img src="img/Rectangle 20gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-10"><img src="img/Rectangle 21gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-11"><img src="img/Rectangle 22gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-12"><img src="img/Rectangle 23gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-13"><img src="img/Rectangle 24gal.png" alt=""></div>
+            <div class="gallery__item gallery__item-14"><img src="img/Rectangle 25gal.png" alt=""></div>
+        </div>
         <footer class="footer">
             <svg class="footer__logo">
                 <use xlink:href="icons/symbol-defs2.svg#icon-logo"></use>
             </svg>
             <ul class="footer__nav-bar nav-bar nav-bar_footer">
-                <li class="nav-bar__element">АРЕНДА КОНСОЛЕЙ</li>
-                <li class="nav-bar__element">КОМАНДНЫЕ СОРЕВНОВАНИЯ</li>
-                <li class="nav-bar__element">АРЕНДА СЕРВЕРА</li>
-                <li class="nav-bar__element">СООБЩЕСТВО</li>
-                <li class="nav-bar__element">РАБОТАЙ И ИГРАЙ</li>
+                <li class="nav-bar__element"><a href="">АРЕНДА КОНСОЛЕЙ</a></li>
+                <li class="nav-bar__element"><a href="">КОМАНДНЫЕ СОРЕВНОВАНИЯ</a></li>
+                <li class="nav-bar__element"><a href="">АРЕНДА СЕРВЕРА</a></li>
+                <li class="nav-bar__element"><a href="">СООБЩЕСТВО</a></li>
+                <li class="nav-bar__element"><a href="">РАБОТАЙ И ИГРАЙ</a></li>
             </ul>
         </footer>
     </div>

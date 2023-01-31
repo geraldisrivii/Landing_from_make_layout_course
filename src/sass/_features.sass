@@ -5,10 +5,13 @@
     padding: 15rem 0rem
     gap: 3rem 4rem
     grid-template-columns: repeat(auto-fill, minmax(346px, 1fr))
-
 .feature
     display: grid
     grid-template-columns: 6.5rem 1fr
+    transition: all .3s
+    &:hover > &__icon
+        transition: all .3s
+        transform: translateY(10%) scale(1.1)
     &__description
         //sds
     &__icon

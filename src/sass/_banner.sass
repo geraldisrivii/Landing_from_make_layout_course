@@ -18,6 +18,9 @@
     &__image
         position: absolute
         width: 90%
+        transition: all .3s
+        &:hover
+            transform: scale(1.05)
         @include laptop
             width: 49%
             position: static
@@ -29,7 +32,7 @@
         &_1
             top: 0px
             left: 0px
-        &_2 
+        &_2
             top: 15rem
             left: 15rem
     @include laptop
@@ -42,7 +45,7 @@
         display: block
 .banner-text
     background-color: $color-blue-dark
-    grid-column:  col-start 5 / grid-end 
+    grid-column: col-start 5 / grid-end
     @include laptop
         grid-row: 4 / 5
         grid-column: grid-start / grid-end
@@ -53,4 +56,3 @@
         width: 80%
         @include phone
             width: 100%
-
