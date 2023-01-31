@@ -1,2 +1,7 @@
 test
 node_modules
+src
+gulpfile.js
+package-lock.json
+package.json
+node_modules
