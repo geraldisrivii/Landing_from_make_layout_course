@@ -1,0 +1,23 @@
+.sidebar
+    background-color: $color-green-dark
+    position: fixed
+    width: 80px
+    height: 100vh
+    transition:  all .3s
+    z-index: 10
+    text-align: center
+    &__gamburger
+        margin-bottom: 20px
+    &__nav-bar
+        transition: all .3s
+        width: 10%
+        opacity: 0
+        text-align: center
+        padding: 10px
+        margin-bottom: 20%
+    &__logo 
+        width: 140px
+        height: 50px
+        visibility: hidden
+    @include phone
+        display: none

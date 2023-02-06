@@ -1,0 +1,35 @@
+@import '_mixins.sass'
+@import '_variables.sass'
+@import 'typography.sass'
+.description-card-second
+    min-width: 24rem
+    min-height: 30rem
+    background-color: $background_button
+    border-radius: .5rem
+    box-shadow: $box-shadow
+    padding: 2.5rem
+    text-align: center
+    &__image
+        margin-bottom: 2.4rem
+        display: inline-block
+        margin-bottom: 2.4rem
+        color: transparent
+    &__header
+        margin-bottom: 1rem
+        text-transform: uppercase
+        text-align: center
+    &__text
+        // Text
+    &:hover
+        transition: all .5s
+        transform: scale(1.1)
+    &:not(:hover)
+        transition: all .5s
+        transform: scale(1)
+.description-card
+    &__header
+        text-align: center
+        @include table
+            color: $us_white
+        @include min_table
+            width: 100%
